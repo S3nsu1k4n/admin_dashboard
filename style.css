@@ -1,0 +1,48 @@
+html{
+  --color_sidebar: rgba(25,146,212,255);
+  --color_project_left: rgba(240,180,41,255);
+  --color_projects_background: rgba(226,232,240,255);
+  --color_search_bar: rgba(226,232,240,255);
+}
+#branding > div > img{
+  height: 40px;
+  margin-left: 10px;
+}
+#branding > div{
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+img {
+  filter: invert(100%);
+  height: 20px;
+  margin-left: 20px;
+}
+body{
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  grid-template-rows: 1fr;
+  background-color: aqua;
+}
+#sidebar{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 6fr;  /*branding + navigation*/
+
+  background-color: var(--color_sidebar);
+  color: white;
+  font-size: 12px;
+}
+.sidebar-row{
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+#navigation{
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  gap: 30px;
+}
