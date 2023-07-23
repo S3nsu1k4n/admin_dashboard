@@ -22,10 +22,12 @@ body{
   margin: 0px;
   display: grid;
   grid-template-columns: clamp(150px, 20%, 200px) 3.5fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 100px 1fr;
   background-color: aqua;
 }
 #sidebar{
+  grid-row-start: 1;
+  grid-row-end: 3;
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
@@ -45,4 +47,16 @@ body{
   display: grid;
   grid-template-rows: 1fr 1.5fr;
   gap: 30px;
+}
+
+/*********** HEADER ***********/
+
+#header{
+  background-color: white;
+}
+
+/*********** MAIN CONTENTS ***********/
+
+#main-contents{
+  background-color: var(--color_projects_background);
 }
