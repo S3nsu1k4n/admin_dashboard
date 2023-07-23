@@ -21,7 +21,7 @@ img {
 body{
   margin: 0px;
   display: grid;
-  grid-template-columns: 1fr 3.5fr;
+  grid-template-columns: clamp(150px, 20%, 200px) 3.5fr;
   grid-template-rows: 1fr;
   background-color: aqua;
 }
