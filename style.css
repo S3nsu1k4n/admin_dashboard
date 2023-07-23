@@ -23,7 +23,7 @@ body{
   display: grid;
   grid-template-columns: clamp(150px, 20%, 200px) 3.5fr;
   grid-template-rows: 100px 1fr;
-  background-color: aqua;
+  background-color: white;
 }
 #sidebar{
   grid-row-start: 1;
@@ -56,6 +56,8 @@ body{
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 10px 12px 1px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3px;
 }
 #h-top-left{
   display: grid;
@@ -66,8 +68,8 @@ body{
   padding-left: 20px;
 }
 
-#search-img{
-  height: 20px;
+#header-img{
+  height: 18px;
 }
 #search-box{
   background-color: var(--color_search_bar);
@@ -77,13 +79,59 @@ body{
 }
 
 #h-top-right{
-  border: solid;
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  grid-template-rows: 1fr;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+}
+#profile-img{
+  height: 35px;
+  border-radius: 50%;
 }
 #h-bottom-left{
-  border: solid;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 20px 20px;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+}
+#h-bottom-left > p{
+  padding-left: 50px;
+}
+#profile-img-big{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+  border-radius: 50%;
+}
+#greet{
+  font-size: 80%;
+  font-weight: 600;
+}
+#profilename-big{
+  font-size: 130%;
+  font-weight: 600;
 }
 #h-bottom-right{
-  border: solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding-right: 25px;
+  align-items: center;
+}
+button{
+  height: 60%;
+  background-color: var(--color_sidebar);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 /*********** MAIN CONTENTS ***********/
