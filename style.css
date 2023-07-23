@@ -13,7 +13,7 @@ html{
   font-weight: 600;
 }
 
-img {
+.sb-svg {
   filter: invert(100%);
   height: 20px;
   margin-left: 20px;
@@ -53,6 +53,37 @@ body{
 
 #header{
   background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#h-top-left{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#search-img{
+  height: 20px;
+}
+#search-box{
+  background-color: var(--color_search_bar);
+  border-radius: 12px;
+  border: 0px;
+  height: 20px;
+}
+
+#h-top-right{
+  border: solid;
+}
+#h-bottom-left{
+  border: solid;
+}
+#h-bottom-right{
+  border: solid;
 }
 
 /*********** MAIN CONTENTS ***********/
