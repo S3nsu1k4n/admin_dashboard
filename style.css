@@ -138,4 +138,93 @@ button{
 
 #main-contents{
   background-color: var(--color_projects_background);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+#main-contents > div > h1{
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+#projects{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#projects-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, );
+}
+.project{
+  background-color: white;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding-left: 0px;
+
+}
+.project > div{
+  margin-left: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.project > div > img{
+  height: 20px;
+}
+.project > h1{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.project > p{
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#announcements{
+}
+#announcements-container{
+  background-color: white;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 8px;
+  margin-top: 12px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.announcement{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.announcement > h1{
+  font-size: 11px;
+}
+.announcement > p{
+  font-size: 12px;
+}
+
+#trending{
+  display: grid;
+  grid-template-rows: 35px 1fr;
+}
+#trending-container{
+  background-color: white;
+  border-radius: 12px;
+  display: grid;
+  margin: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+
+}
+.trend-user{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.trend-user > img{
+  height: 30px;
+  border-radius: 50%;
 }
